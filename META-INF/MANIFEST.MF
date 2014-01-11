@@ -1,0 +1,7 @@
+Main-Class: com.hfp.impt.excel.ImportFbrokerDataImpl
+Class-Path: .
+  ./config
+  
+  
+Bundle-ClassPath:lib/*.jar
+

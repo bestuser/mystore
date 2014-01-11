@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="lib/poi-examples-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="lib/poi-excelant-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="lib/poi-scratchpad-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="lib/AFIS-DB-0.0.9.jar"/>
+	<classpathentry kind="lib" path="lib/AFIS-Net-1.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/AFIS-Utils-1.0.1-resource.jar"/>
+	<classpathentry kind="lib" path="lib/AFIS-Utils-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/HFP-Business-Core-0.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/HFP-Business-Store-0.4.54.jar"/>
+	<classpathentry kind="lib" path="lib/HFP-Entities-DAO-0.6.25.jar"/>
+	<classpathentry kind="lib" path="lib/HFP-Entities-Model-0.6.25.jar"/>
+	<classpathentry kind="lib" path="lib/HFP-Member-0.5.3.jar"/>
+	<classpathentry kind="lib" path="lib/HFP-Net-Mina-1.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/HFP-Utils-0.0.8.jar"/>
+	<classpathentry kind="lib" path="lib/ibatis-2.3.4.727.jar"/>
+	<classpathentry kind="lib" path="lib/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="lib/mina-core-2.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc5-11.1.0.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.7.5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+	<settings
+		cacheModelsEnabled="true"
+		enhancementEnabled="true"
+		lazyLoadingEnabled="true"
+		errorTracingEnabled="true"
+		useStatementNamespaces="true"
+		maxRequests="2048"
+		maxTransactions="512"
+		maxSessions="1024"
+	/>
+	<transactionManager type="JDBC">
+		<dataSource type="DBCP">
+			<property name="JDBC.Driver" value="oracle.jdbc.driver.OracleDriver"/>
+			<property name="JDBC.ConnectionURL" value="jdbc:oracle:thin:@(DESCRIPTION=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.78.99)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=dbtest40)))" />
+			<property name="JDBC.Username" value="perf_broker"/>
+			<property name="JDBC.Password" value="perf_broker"/>
+			
+			<property name="Pool.RemoveAbandonedTimeout" value="50000"/>
+			<property name="Pool.RemoveAbandoned" value="true"/>
+			<property name="Pool.MaximumWait" value="30000"/>
+			<property name="Pool.ValidationQuery" value="select 1 from dual"/>
+			<property name="Pool.LogAbandoned" value="true"/>
+		</dataSource>
+	</transactionManager>
+	<sqlMap resource="sqlmap/autogenerate/trading/T_E_CONTRACT_LOG_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/trading/T_E_CONTRACT_DC_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/trading/T_E_CONTRACT_OC_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/trading/T_E_CONTRACT_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/trading/T_E_FEE_RATE_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/trading/T_E_GOODS_PROPERTY_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/trading/T_E_GOODS_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/trading/T_E_PRIVILEGE_POLICY_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/base/T_S_OPERATOR_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_CLIENT_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_FBFEE_RATE_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_FBGROUP_PRIVILEGE_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_FBGROUP_RATE_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_FBGROUP_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_FBMEMBER_GROUP_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_FBPRIVILEGE_POLICY_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_FBROKER_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_GROUP_PRIVILEGE_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_GROUP_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_MEMBER_EXTRA_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_MEMBER_GROUP_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_MEMBER_LOG_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_MEMBER_OPERATOR_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/autogenerate/member/T_M_MEMBER_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/HFP_Member_Managements_SqlMap.xml"/>
+	<sqlMap resource="sqlmap/HFP_Trading_Managements_SqlMap.xml"/>
+</sqlMapConfig>
